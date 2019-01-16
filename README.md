@@ -3,17 +3,18 @@
 
 ## Eureka Server
 
-defaultZone: http://localhost:8080/web-eureka/eureka/
-context-path: /web-eureka
+- defaultZone: http://localhost:8080/web-eureka/eureka/
+- context-path: /web-eureka
 
 
 ## Eureka Client-Java
 
-spring.application.name: application-client-demo
-context-path: /web-client-demo
+- spring.application.name: application-client-demo
+- context-path: /web-client-demo
 port: 8081
 
 提供一个服务接口
+
 [![](http://voidm.com/wp-content/uploads/2019/01/TIM截图20190116163631.png)](http://voidm.com/wp-content/uploads/2019/01/TIM截图20190116163631.png)
 
 此时,注册中心 有以上一个Client节点(**不包含EurekaServer本身**)
